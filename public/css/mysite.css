@@ -1,0 +1,65 @@
+/* body {
+    text-decoration: orangered;
+    background-color: orangered;
+} */
+
+.bg-custom {
+    background-color: whitesmoke;
+}
+
+.resumelink{
+text-decoration: orangered !important;
+text-decoration-color: orangered !important;
+/* background-color: #f7941e; */
+}
+
+.mylink:hover {
+    text-decoration: #f7941e;
+}
+
+/* colour game */
+
+.square {
+    background: white;
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 5%;
+    transition: background 0.5s;
+
+}
+
+#rgbtitle {
+    text-decoration: black solid;
+}
+
+#coloursDiv {
+    max-width: 800px;
+    margin: 0.5% auto;
+}
+#gameFeedback {
+    display: inline-block;
+    width: 25%;
+}
+
+#stripe{
+    background-color: #f7941e;
+  height: 45px;
+  text-align: center;
+    
+}
+
+.btn {
+    background-color: none;
+    border: none;
+}
+
+.btn-primary {
+    background: none;
+    transition: all 0.5s;
+}
+
+button{
+    height: 100%;
+}
