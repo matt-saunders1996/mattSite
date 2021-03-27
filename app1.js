@@ -26,6 +26,11 @@ app.get('/rgbGame', (req, res) => {
     res.render('rgbGame')
 });
 
+app.get ('/.well-known/acme-challenge/gWr2EF9WCPtGIoClgsnRLsopQmYu5Qq8H5SjUa-zyvc', (req, res) => {
+    res.render('home')
+});
+
+
 app.get('/gallery', (req, res) => {
     res.render('gallery')
 });
