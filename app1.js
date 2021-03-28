@@ -22,6 +22,11 @@ app.get('/', (req, res) => {
     res.render('home')
 });
 
+app.get ('/.well-known/acme-challenge/gWr2EF9WCPtGIoClgsnRLsopQmYu5Qq8H5SjUa-zyvc', (req, res) => {
+    res.render('home')
+});
+
+
 app.get('/rgbGame', (req, res) => { 
     res.render('rgbGame')
 });
@@ -33,7 +38,7 @@ app.get('/gallery', (req, res) => {
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {
-    console.log(`serving on port`);
+    console.log(`serving on port ${port}`);
 });
 
 
