@@ -1,14 +1,9 @@
-// if (process.env.NODE_ENV !== "production") {
-//     require('dotenv').config();
-// };
-
-// // require('dotenv').config();
-
 
 
 // // Dependencies
 const express = require('express');
 const path = require('path');
+const https = require('https');
 
 const app = express();
 
