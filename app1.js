@@ -31,7 +31,7 @@ app.get('/gallery', (req, res) => {
     res.render('gallery')
 });
 
-const port = 80
+const port = 80 || 3000
 
 app.listen(port, () => {
     console.log(`serving on port ${port}`);
