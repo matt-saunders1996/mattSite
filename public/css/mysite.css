@@ -82,3 +82,7 @@ ul {
     margin-left: -1em; /* Also needed for space (tweak if needed) */
     list-style: square;
   }
+
+  .mobileList p {
+    margin: 0;
+}
