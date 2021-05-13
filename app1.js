@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.render('home')
 });
 
-app.get ('/.well-known/acme-challenge/gWr2EF9WCPtGIoClgsnRLsopQmYu5Qq8H5SjUa-zyvc', (req, res) => {
+app.get ('/.well-known/pki-validation', (req, res) => {
     res.render('home')
 });
 
