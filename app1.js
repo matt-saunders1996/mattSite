@@ -7,6 +7,9 @@ const https = require('https');
 
 const app = express();
 
+var options = {
+    root: path.join(__dirname, '.well-known/pki-validation')
+};
 
 app.use(express.static(path.join(__dirname, 'public'), { dotfiles: 'allow' }));
 
@@ -19,8 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.get ('/.well-known/pki-validation/38E94031BFD4ABBF419B87408CD6F7CF.txt', (req, res) => {
-    res.send('F582A604B96E0A94569CC989D3B47861549294EA67C2B7CB70D099E4DA6E2AFA\ncomodoca.com\n9HY5cm555W5z6LiJ5o55')
-});
+    res.sendFile('38E94031BFD4ABBF419B87408CD6F7CF.txt', options)});
 
 
 app.get('/rgbGame', (req, res) => { 
