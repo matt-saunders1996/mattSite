@@ -107,6 +107,7 @@ menu,
 nav,
 section {
 	display: block;
+	/* min-height: 1200px; */
 }
 
 body {
@@ -285,7 +286,7 @@ i {
 }
 
 p {
-	margin: 0 0 2em 0;
+	margin: 0 0 1em 0;
 }
 
 h1,
@@ -296,7 +297,7 @@ h5,
 h6 {
 	font-weight: normal;
 	line-height: 1em;
-	margin: 0 0 1em 0;
+	/* margin: 0 0 1em 0; */
 	letter-spacing: -0.0125em;
 }
 
@@ -327,6 +328,8 @@ h6 a {
 h2 {
 	font-size: 1.75em;
 	line-height: 1.5em;
+	justify-content: center;
+	text-align: center;
 }
 
 h3 {
@@ -449,7 +452,7 @@ a:hover {
 
 strong,
 b {
-	color: #828282;
+	color: rgba(223, 103, 3, 1);
 }
 
 h1 {
@@ -1992,6 +1995,8 @@ button,
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 }
 
 
@@ -2547,8 +2552,8 @@ ol li {
 
 ul {
 	list-style: disc;
-	margin: 0 0 2em 0;
-	padding-left: 1em;
+	margin: 0 0 0 0;
+	/* padding-left: 1em; */
 }
 
 ul li {
@@ -2808,7 +2813,8 @@ ul.icons.labeled li .icon .label {
 
 section.special,
 article.special {
-	text-align: center;
+	/* text-align: center; */
+	/* margin-left: 7rem; */
 }
 
 header p {
@@ -3047,7 +3053,7 @@ table.alt tbody tr td {
 /* Wrapper */
 
 .wrapper {
-	padding: 4.5em 0 2.5em 0;
+	padding: 2em 0 2.5em 0;
 	background-color: #ffffff;
 	border-bottom: solid 2px #eeeeee;
 }
@@ -3251,7 +3257,7 @@ table.alt tbody tr td {
 
 .wrapper.style1 strong,
 .wrapper.style1 b {
-	color: #ffffff;
+	color: rgba(223, 103, 3, 1)ffffff;
 }
 
 .wrapper.style1 h1,
@@ -3278,7 +3284,7 @@ table.alt tbody tr td {
 
 .wrapper.style2 {
 	background-color: #fbfbfb;
-	color: #999999;
+	color: #555555;
 }
 
 .wrapper.style2 input[type="submit"],
@@ -3404,8 +3410,19 @@ table.alt tbody tr td {
 	color: #e0e0e0 !important;
 }
 
-.wrapper.style2 .icon {
-	color: #e0e0e0;
+.wrapper.style2 .col-5 .icon {
+	color: rgba(223, 103, 3, 1);
+	font-size: 3rem;
+	vertical-align: middle;
+	text-align: end;
+}
+.wrapper.style2 .col-5 .iconAlt {
+	color: rgba(223, 103, 3, 1);
+	font-size: 2.0rem;
+	margin: 0rem 0rem 1rem 0rem;
+	padding: 0rem 0rem 1rem 0.4rem;
+	vertical-align: middle;
+
 }
 
 .wrapper.style2 .image {
@@ -3475,7 +3492,7 @@ table.alt tbody tr td {
 
 .wrapper.style2 strong,
 .wrapper.style2 b {
-	color: #828282;
+	color: rgba(223, 103, 3, 1);
 }
 
 .wrapper.style2 h1,
@@ -3484,7 +3501,7 @@ table.alt tbody tr td {
 .wrapper.style2 h4,
 .wrapper.style2 h5,
 .wrapper.style2 h6 {
-	color: #828282;
+	color: #555555;
 }
 
 .wrapper.style2 blockquote {
@@ -3727,7 +3744,7 @@ table.alt tbody tr td {
 @media screen and (max-width: 980px) {
 
 	.wrapper {
-		padding: 4em 4em 2em 4em;
+		padding: 2em 4em 2em 4em;
 	}
 
 	.wrapper>.inner {
@@ -3739,7 +3756,7 @@ table.alt tbody tr td {
 @media screen and (max-width: 736px) and (orientation: landscape) {
 
 	.wrapper {
-		padding: 3em 3em 1em 3em;
+		padding: 1em 3em 1em 3em;
 	}
 
 }
@@ -3747,7 +3764,7 @@ table.alt tbody tr td {
 @media screen and (max-width: 736px) and (orientation: portrait) {
 
 	.wrapper {
-		padding: 3em 1.5em 1em 1.5em;
+		padding: 1em 1.5em 1em 1.5em;
 	}
 
 }
@@ -3755,7 +3772,7 @@ table.alt tbody tr td {
 @media screen and (max-width: 480px) and (orientation: landscape) {
 
 	.wrapper {
-		padding: 2em 1.5em 0.1em 1.5em;
+		padding: 1em 1.5em 0.1em 1.5em;
 	}
 
 }
@@ -3763,7 +3780,7 @@ table.alt tbody tr td {
 @media screen and (max-width: 480px) and (orientation: portrait) {
 
 	.wrapper {
-		padding: 2em 1em 0.1em 1em;
+		padding: 1em 1em 0.1em 1em;
 	}
 
 }
@@ -4302,6 +4319,140 @@ body.is-preload #header .image img {
 #footer .copyright {
 	font-size: 0.8em;
 }
+
+#contactIconTel {
+	color: #3f3f3f;
+	margin-top: 2em;
+}
+
+#contactIconMail {
+	color: #3f3f3f;
+	list-style: none;
+	list-style-type: none;
+}
+
+.noBullet {
+	list-style: none;
+	list-style-type: none;
+	padding: 0%;
+}
+
+.col-5 ul .skillBP {
+	text-align: end;
+	vertical-align: middle;
+	padding: 2.3rem 0rem 0rem 0rem;
+	margin: 0% 0% 0% 30%;
+	list-style: none;
+}
+.col-5 ul .skillBPright {
+	text-align: start;
+	vertical-align: middle;
+	padding: 2.3rem 0rem 0rem 0rem;
+	margin: 0% 30% 0% 0%;
+	list-style: none;
+}
+.col-5 ul .skillBPrightAlt {
+	text-align: start;
+	vertical-align: middle;
+	padding: 2.0rem 0rem 0rem 0rem;
+	margin: 0% 30% 0% 0%;
+	list-style: none;
+}
+
+#SG {
+	/* background-image: url(images/); */
+	/* display:block; */
+	/* position:absolute; */
+	background-repeat: no-repeat;
+	/* background-size: 100% 100%; */
+	width: 16%;
+	/* height: 8%; */
+	/* padding: 0px 70px 0px 70px; */
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.break {
+	border-radius: 0.07em;
+	border: rgba(223, 103, 3, 1) solid;
+	margin-left: 45%;
+	margin-right: 45%;
+	margin-top: 0.6rem;
+	margin-bottom: 1.5rem;
+
+
+}
+
+#one #moreButton {
+	color: rgb(26, 26, 26);
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	font-size: 1em;
+}
+
+#two #moreButton2 {
+	color: rgb(26, 26, 26);
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	font-size: 1em;
+}
+
+.intro {
+	padding: 0% 22% 1% 22%;
+	text-align: center;
+}
+
+
+/* colour game */
+
+.square {
+	background: white;
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 5%;
+	transition: background 0.5s;
+
+}
+
+#rgbTitle {
+	margin-left: auto;
+	margin-right: auto;
+	/* padding-top: 90%; */
+}
+
+#coloursDiv {
+	max-width: 500px;
+	margin: 0.5% auto;
+	padding-bottom: 40%;
+
+}
+
+#gameFeedback {
+	display: inline-block;
+	width: 25%;
+}
+
+#buttonsDiv {
+	/* background-color: #f7941e; */
+	border-radius: 5%;
+	transition: background 0.5s;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+
+}
+
+
 
 @media screen and (max-width: 980px) {
 
